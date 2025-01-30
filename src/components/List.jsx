@@ -41,12 +41,12 @@ function List({ cartItems, setCartItems }) {
 
 
 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h2>Your Cart</h2>
-        {/* Close Icon */}
+        <h2>Your Cart</h2> 
+
         <AiOutlineClose
           size={30}
           style={{ cursor: 'pointer', color: 'red' }}
-          onClick={() => navigate('/')} // Redirect to home or product page
+          onClick={() => navigate('/')} 
         />
       </div>
 

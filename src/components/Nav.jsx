@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom';
 
 function Nav({ cart }) {
 
-//   const handleCartClick = (e) => {
-//     e.preventDefault();
-//     toggleModal();
-//   };
 
   return (
     <>

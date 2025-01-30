@@ -20,7 +20,7 @@ function Productlist({cart,setCart,cartItems,setCartItems,product={}}) {
         const existingItem = cartItems.find((item) => item.id === product.id);
     
         if (existingItem) {
-          // If it exists, increment the quantity
+          
           const updatedCartItems = cartItems.map((item) =>
             item.id === product.id
               ? { ...item, quantity: item.quantity + 1 }
@@ -28,7 +28,7 @@ function Productlist({cart,setCart,cartItems,setCartItems,product={}}) {
           );
           setCartItems(updatedCartItems);
         } else {
-          // If it doesn't exist, add it with quantity 1
+         
           setCartItems([...cartItems, { ...product, quantity: 1 }]);
         }
       };

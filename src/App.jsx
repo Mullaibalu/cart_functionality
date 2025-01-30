@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Nav from './components/Nav'
 import List from './components/List'
-// import Cartlist from './components/Cartlist'
 import { Routes, Route} from 'react-router'
 import Productlist from './components/Productlist'
 
