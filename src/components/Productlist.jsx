@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-// import ReactStars from "react-rating-stars-component";
+import ReactStars from "react-rating-stars-component";
 function Productlist({cart,setCart,cartItems,setCartItems,product={}}) {
     
    
@@ -43,12 +43,12 @@ function Productlist({cart,setCart,cartItems,setCartItems,product={}}) {
             <div className="text-center">
                 <h5 className="fw-bolder">{product.title}</h5>
                 <div className="d-flex justify-content-center small text-warning mb-2">
-                    {/* <ReactStars
+                    <ReactStars
                         count={5}
                         size={24}
                         activeColor="red"
                         value={product.rating.rate}
-                    /> */}
+                    />
                 </div>
                 <span>${product.price}</span>
                 {/* &nbsp;
